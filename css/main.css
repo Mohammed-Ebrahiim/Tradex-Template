@@ -1,0 +1,313 @@
+.special-heading{
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.special-heading h3{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.special-heading hr{
+    opacity: 1;
+    border: 2px solid rgb(0, 0, 236);;
+    background-color: rgb(0, 0, 236);
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+}
+/*About Section*/
+.About-Section ul li:hover i, .About-Section ul li:hover h3{
+    color: blue;
+}
+.first-col{
+    position: relative;
+    height: 500px;
+    top: 10px;
+    z-index: 2;
+}
+.sec-col{
+    position: relative;
+    right: 80px;
+    z-index: 1;
+}
+.sec-col img{
+    height: 520px;
+    width: 99%
+}
+/* carousel-item and slider */
+.carousel-item{
+    height: 72vh;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    background-size: cover;
+}
+.carousel-item::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(8, 8, 8);
+    opacity: .8;
+}
+.carousel-caption{
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+.carousel-caption h1{
+    font-size: 60px;
+}
+.carousel-caption p{
+    padding: 20px 10%;
+}
+.buu{
+    position: relative;
+    overflow: hidden;
+}
+.buu::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:#fff;
+    filter: blur(1px);
+    opacity: 0.5;
+    top: 0%;
+    left: -150%;
+    transition: 0.9s;
+    transform: rotate(125deg);
+    transition: all ease 1s;
+}
+.buu:hover::before{
+    left: 100%;
+}
+
+/* .carousel-indicators{
+    position: relative;
+}
+.carousel-indicators button{
+    position: absolute;
+    left: 90%;
+    bottom: 200px;
+    width: 50px !important;
+    height: 50px !important;
+    background-color: tomato !important;
+} */
+
+/* carousel-indicators */
+.carousel-indicators{
+    flex-direction: column;
+    bottom: 35% !important;
+    left: 75% !important;
+}
+.carousel-indicators [data-bs-target] {
+    width: 20px !important;
+    height: 20px !important;
+    padding: 2px;
+}
+.carousel-item p{
+    color: white;
+}
+
+
+
+
+
+.landing-section{
+    background-image: url(../images/slider1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.landing-section h1{
+    padding-top: 200px;
+    font-size: 80px;
+    color: white;
+}
+.landing-section p{
+    font-size: 30px;
+    width: 60%;
+    margin: 50px auto;
+}
+.landing-section .buttons{
+    padding-bottom: 200px;
+}
+.landing-section .container .buttons :last-child:hover{
+    background-color: #0D6EFD;
+    transition: background-color .5s ease-in;
+}
+
+/* Services */
+.Services{
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.Services .overlay{
+    background-color: #262525d9;
+    /* background-color: #203a6ba9;  */
+}
+
+.images-container .card{
+    position: relative;/*it is for caption div*/
+    overflow: hidden;
+}
+.images-container .card .caption{
+    position: absolute;
+    left: 0;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    width: 100%;
+    transition: .5s ease-in-out;
+    top: 99%;/*To hide caption until hover in box*/
+}
+.images-container :hover .caption{
+    top: 0; /*show after hover*/
+    height: 100%;
+    padding-top: 50px;
+}
+/* **************************************** */
+.images-container1 .card{
+    position: relative;/*it is for caption div*/
+    overflow: hidden;
+}
+.images-container1 .caption{
+    position: absolute;
+    color: white;
+    border-radius: 10px;
+    width: 90%;
+    padding: 5px 20px;
+    transition: .5s ease-in-out;
+    top: 70%;/*To hide caption until hover in box*/
+    left: 5%;
+    transform: scaleX(0);
+}
+.our-work .card:hover{
+    box-shadow: 0px 0px 8px 10px lightgray;
+}
+
+.our-work .images-container1:hover .caption{
+    left: 5%;
+    transform: scaleX(1);
+    top: 70%;
+}
+.images-container2 .card{
+    position: relative;/*it is for caption div*/
+    overflow: hidden;
+}
+.images-container2 .caption{
+    position: absolute;
+    left: 0;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    width: 100%;
+    transition: .5s ease-in-out;
+    top: 75%;/*To hide caption until hover in box*/
+}
+.images-container2 :hover .caption{
+    top: 40%; /*show after hover*/
+    padding-top: 30px;
+}
+.images-container2 .links{
+    display: none;   
+    transition: .9s ease-in-out;
+}
+.images-container2 :hover hr{
+    display: none;   
+}
+.links{
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+}
+.images-container2 :hover .links{
+    display: block;
+    transition: .9s ease-in-out;
+}
+.images-container2 .links a :hover{
+    /* color: black; */
+    transform: scale3d(1.5,1.5,1.5);
+}
+/* Our Pricing */
+.btn-group{
+    width: fit-content;
+}
+.plan-btn1{
+    font-size: 30px;
+    font-weight: normal;
+    border: 2px solid !important;
+    border-right: none !important;
+    border-radius: 40px 0 0 40px !important;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #0d6efd;
+    border: 2px solid #0d6efd !important;
+}
+.plan-btn2{
+    font-size: 30px;
+    font-weight: normal;
+    border: 2px solid !important;
+    border-radius: 0px 40px 40px 0px !important;
+}
+.btn1{
+    border-radius: 15px 0 0 15px !important;
+    padding: 5px 15px !important;
+}
+.btn2{
+    border-radius: 0px 15px 15px 0px !important;
+    padding: 5px 15px !important;
+}
+.latest-blog .card img{
+    transition: .5s; 
+}
+.latest-blog .card:hover img{
+    transform: rotate(-2deg) scale(1.1);
+    overflow: hidden;
+}
+.latest-blog .card:hover .progress-bar{
+    width: 100% !important;
+}
+.contact-links{
+    transition: .8s;
+}
+.latest-blog .card:hover .contact-links{
+    background-color: #0d6efd !important;
+}
+.Purchase-now{
+    margin-top: -74px;
+    z-index: 5;
+}
+.footer button:nth-child(odd):hover{
+    background-color: #0d6efd;
+    color: white;
+}
+.footer button:nth-child(even):hover{
+    background-color: #198754;
+    color: white;
+}
+.top{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 3;
+    margin-left: 92%;
+    margin-bottom: 4%;
+    display: none;
+}
+.bottom{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 3;
+    margin-left: 3%;
+    margin-bottom: 4%;
+    display: none;
+
+}
